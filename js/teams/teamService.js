@@ -42,7 +42,7 @@ app.service('teamService', function($http, $q){
 			deferred.reject(reason);
 		});
 
-		return deferred;
+		return deferred.promise;
 	};
 
 });
